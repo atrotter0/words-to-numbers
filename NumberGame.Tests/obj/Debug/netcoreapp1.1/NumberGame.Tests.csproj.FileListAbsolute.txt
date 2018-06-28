@@ -1,0 +1,14 @@
+/Users/Guest/Desktop/NumberGame.Solution/NumberGame.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/Users/Guest/Desktop/NumberGame.Solution/NumberGame.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/Users/Guest/Desktop/NumberGame.Solution/NumberGame.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/Users/Guest/Desktop/NumberGame.Solution/NumberGame.Tests/bin/Debug/netcoreapp1.1/NumberGame.Tests.deps.json
+/Users/Guest/Desktop/NumberGame.Solution/NumberGame.Tests/bin/Debug/netcoreapp1.1/NumberGame.Tests.runtimeconfig.json
+/Users/Guest/Desktop/NumberGame.Solution/NumberGame.Tests/bin/Debug/netcoreapp1.1/NumberGame.Tests.runtimeconfig.dev.json
+/Users/Guest/Desktop/NumberGame.Solution/NumberGame.Tests/bin/Debug/netcoreapp1.1/NumberGame.Tests.dll
+/Users/Guest/Desktop/NumberGame.Solution/NumberGame.Tests/bin/Debug/netcoreapp1.1/NumberGame.Tests.pdb
+/Users/Guest/Desktop/NumberGame.Solution/NumberGame.Tests/bin/Debug/netcoreapp1.1/NumberGame.dll
+/Users/Guest/Desktop/NumberGame.Solution/NumberGame.Tests/bin/Debug/netcoreapp1.1/NumberGame.pdb
+/Users/Guest/Desktop/NumberGame.Solution/NumberGame.Tests/obj/Debug/netcoreapp1.1/NumberGame.Tests.csproj.CoreCompileInputs.cache
+/Users/Guest/Desktop/NumberGame.Solution/NumberGame.Tests/obj/Debug/netcoreapp1.1/NumberGame.Tests.AssemblyInfo.cs
+/Users/Guest/Desktop/NumberGame.Solution/NumberGame.Tests/obj/Debug/netcoreapp1.1/NumberGame.Tests.dll
+/Users/Guest/Desktop/NumberGame.Solution/NumberGame.Tests/obj/Debug/netcoreapp1.1/NumberGame.Tests.pdb

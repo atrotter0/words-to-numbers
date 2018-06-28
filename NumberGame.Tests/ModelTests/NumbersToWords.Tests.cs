@@ -9,10 +9,11 @@ namespace NumberGame.Tests
     public class NumbersToWordsTest
     {
         [TestMethod]
-        public void ()
+        public void SetGetUserNumber_SetsGetsUserNumber_Int()
         {
             NumbersToWords newObject = new NumbersToWords();
-
+            newObject.SetUserNumber("1");
+            Assert.AreEqual(1, newObject.GetUserNumber());
         }
     }
 }

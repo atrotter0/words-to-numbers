@@ -5,9 +5,22 @@ namespace NumberGame
 {
     public class NumbersToWords
     {
+        private int _userNumber;
         private Dictionary<int, string> _onesDictionary = new Dictionary<int, string>() {};
         private Dictionary<int, string> _tensDictionary = new Dictionary<int, string>() {};
+        private Dictionary<int, string> _teensDictionary = new Dictionary<int, string>() {};
         private Dictionary<int, string> _modifierDictionary = new Dictionary<int, string>() {};
+
+        public void SetUserNumber(string number)
+        {
+            int intNumber = int.Parse(number);
+            _userNumber = intNumber;
+        }
+
+        public int GetUserNumber()
+        {
+            return _userNumber;
+        }
 
         public void CreateOnesDictionary()
         {
@@ -33,6 +46,19 @@ namespace NumberGame
             _tensDictionary[7] = "seventy";
             _tensDictionary[8] = "eighty";
             _tensDictionary[9] = "ninety";
+        }
+
+        public void CreateTeensDictionary()
+        {
+            _teensDictionary[1] = "eleven";
+            _teensDictionary[2] = "twelve";
+            _teensDictionary[3] = "thirteen";
+            _teensDictionary[4] = "fourteen";
+            _teensDictionary[5] = "fifteen";
+            _teensDictionary[6] = "sixteen";
+            _teensDictionary[7] = "seventeen";
+            _teensDictionary[8] = "eighteen";
+            _teensDictionary[9] = "nineteen";
         }
 
         public void CreateModifierDictionary()
