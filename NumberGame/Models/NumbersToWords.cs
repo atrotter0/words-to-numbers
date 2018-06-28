@@ -11,6 +11,7 @@ namespace NumberGame
         private Dictionary<int, string> _tensDictionary = new Dictionary<int, string>() {};
         private Dictionary<int, string> _teensDictionary = new Dictionary<int, string>() {};
         private Dictionary<int, string> _modifierDictionary = new Dictionary<int, string>() {};
+        private int _numberCounter = 0;
 
         public void SetUserNumber(string number)
         {
@@ -20,6 +21,21 @@ namespace NumberGame
         public string GetUserNumber()
         {
             return _userNumber;
+        }
+
+        public void IncrementNumberCounter()
+        {
+            _numberCounter++;
+        }
+
+        public int GetNumberCounter()
+        {
+            return _numberCounter;
+        }
+
+        public void ResetNumberCounter()
+        {
+            _numberCounter = 0;
         }
 
         public void AddChunksOfNumbers(List<char> list)
@@ -117,7 +133,17 @@ namespace NumberGame
             char[] numbersArray = this.InputToChars();
             for (int i = numbersArray.Length - 1; i >= 0; i--)
             {
-
+                // if (numberCounter < 3)
+                // {
+                //     everyThreeNumbers.Add(numbersArray[i]);
+                // }
+                // numberCounter++;
+                //
+                // if (numberCounter == 3)
+                // {
+                //     this.AddChunksOfNumbers(everyThreeNumbers);
+                //     numberCounter = 0;
+                // }
             }
         }
     }

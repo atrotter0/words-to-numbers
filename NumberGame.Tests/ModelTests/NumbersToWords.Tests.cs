@@ -17,6 +17,23 @@ namespace NumberGame.Tests
         }
 
         [TestMethod]
+        public void GetIncrementNumberCounter_GetsIncrementsNumberCounter_Int()
+        {
+            NumbersToWords newObject = new NumbersToWords();
+            newObject.IncrementNumberCounter();
+            Assert.AreEqual(1, newObject.GetNumberCounter());
+        }
+
+        [TestMethod]
+        public void ResetNumberCounter_ResetsIncrementsNumberCounter_Int()
+        {
+            NumbersToWords newObject = new NumbersToWords();
+            newObject.IncrementNumberCounter();
+            newObject.ResetNumberCounter();
+            Assert.AreEqual(0, newObject.GetNumberCounter());
+        }
+
+        [TestMethod]
         public void SetGetChunksOfThreeNumbers_SetsAndGetsChunksOfThreeNumbers_List()
         {
             NumbersToWords newObject = new NumbersToWords();
