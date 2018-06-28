@@ -35,6 +35,11 @@ namespace NumberGame
             _onesDictionary[9] = "nine";
         }
 
+        public string GetOnesValue(int number)
+        {
+            return _onesDictionary[number];
+        }
+
         public void CreateTensDictionary()
         {
             _tensDictionary[1] = "ten";
@@ -46,6 +51,11 @@ namespace NumberGame
             _tensDictionary[7] = "seventy";
             _tensDictionary[8] = "eighty";
             _tensDictionary[9] = "ninety";
+        }
+
+        public string GetTensValue(int number)
+        {
+            return _tensDictionary[number];
         }
 
         public void CreateTeensDictionary()
@@ -61,6 +71,11 @@ namespace NumberGame
             _teensDictionary[9] = "nineteen";
         }
 
+        public string GetTeensValue(int number)
+        {
+            return _teensDictionary[number];
+        }
+
         public void CreateModifierDictionary()
         {
             _modifierDictionary[13] = "trillion";
@@ -73,6 +88,11 @@ namespace NumberGame
             _modifierDictionary[6] = "thousand";
             _modifierDictionary[5] = "thousand";
             _modifierDictionary[4] = "thousand";
+        }
+
+        public string GetModifierValue(int number)
+        {
+            return _modifierDictionary[number];
         }
     }
 }
