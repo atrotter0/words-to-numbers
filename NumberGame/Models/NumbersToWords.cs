@@ -6,6 +6,7 @@ namespace NumberGame
     public class NumbersToWords
     {
         private string _userNumber;
+        private List<List<char>> _chunksOfThreeNumbers = new List<List<char>>() {};
         private Dictionary<int, string> _onesDictionary = new Dictionary<int, string>() {};
         private Dictionary<int, string> _tensDictionary = new Dictionary<int, string>() {};
         private Dictionary<int, string> _teensDictionary = new Dictionary<int, string>() {};
@@ -19,6 +20,16 @@ namespace NumberGame
         public string GetUserNumber()
         {
             return _userNumber;
+        }
+
+        public void AddChunksOfNumbers(List<char> list)
+        {
+            _chunksOfThreeNumbers.Add(list);
+        }
+
+        public List<List<char>> GetChunksOfThreeNumbers()
+        {
+            return _chunksOfThreeNumbers;
         }
 
         public void CreateOnesDictionary()
@@ -94,12 +105,20 @@ namespace NumberGame
             return _modifierDictionary[number];
         }
 
-        public char[] InputToChars(string number)
+        public char[] InputToChars()
         {
-            char[] numbersArray = number.ToCharArray();
+            char[] numbersArray = this.GetUserNumber().ToCharArray();
             return numbersArray;
         }
 
-        //public
+        public void CreateChunksOfNumbers()
+        {
+            List<char> everyThreeNumbers = new List<char>() {};
+            char[] numbersArray = this.InputToChars();
+            for (int i = numbersArray.Length - 1; i >= 0; i--)
+            {
+
+            }
+        }
     }
 }

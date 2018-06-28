@@ -17,6 +17,16 @@ namespace NumberGame.Tests
         }
 
         [TestMethod]
+        public void SetGetChunksOfThreeNumbers_SetsAndGetsChunksOfThreeNumbers_List()
+        {
+            NumbersToWords newObject = new NumbersToWords();
+            List<char> numbers = new List<char>() { '1', '2', '3' };
+            List<List<char>> listOfNumbers = new List<List<char>>() {numbers};
+            newObject.AddChunksOfNumbers(numbers);
+            CollectionAssert.AreEqual(listOfNumbers, newObject.GetChunksOfThreeNumbers());
+        }
+
+        [TestMethod]
         public void CreateDictionaries_CreatesAllDictionaries_String()
         {
             NumbersToWords newObject = new NumbersToWords();
@@ -36,7 +46,7 @@ namespace NumberGame.Tests
             NumbersToWords newObject = new NumbersToWords();
             newObject.SetUserNumber("123");
             char[] numbersSplit = { '1', '2', '3'};
-            CollectionAssert.AreEqual(numbersSplit, newObject.InputToChars(newObject.GetUserNumber()));
+            CollectionAssert.AreEqual(numbersSplit, newObject.InputToChars());
         }
     }
 }
