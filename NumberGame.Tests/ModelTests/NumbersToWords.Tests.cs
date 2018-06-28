@@ -65,5 +65,14 @@ namespace NumberGame.Tests
             char[] numbersSplit = { '1', '2', '3'};
             CollectionAssert.AreEqual(numbersSplit, newObject.InputToChars());
         }
+
+        // [TestMethod]
+        // public void AddThreeNumbers_AddsThreeNumbersToList_List()
+        // {
+        //     NumbersToWords newObject = new NumbersToWords();
+        //     char[] numberArray = {'1', '2', '3', '4'};
+        //     List<char> numbers = new List<char>() { '4', '3', '2' };
+        //     CollectionAssert.AreEqual(numbers, newObject.AddThreeNumbers());
+        // }
     }
 }
