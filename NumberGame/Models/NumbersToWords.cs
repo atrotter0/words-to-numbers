@@ -5,7 +5,7 @@ namespace NumberGame
 {
     public class NumbersToWords
     {
-        private int _userNumber;
+        private string _userNumber;
         private Dictionary<int, string> _onesDictionary = new Dictionary<int, string>() {};
         private Dictionary<int, string> _tensDictionary = new Dictionary<int, string>() {};
         private Dictionary<int, string> _teensDictionary = new Dictionary<int, string>() {};
@@ -13,11 +13,10 @@ namespace NumberGame
 
         public void SetUserNumber(string number)
         {
-            int intNumber = int.Parse(number);
-            _userNumber = intNumber;
+            _userNumber = number;
         }
 
-        public int GetUserNumber()
+        public string GetUserNumber()
         {
             return _userNumber;
         }
@@ -94,5 +93,13 @@ namespace NumberGame
         {
             return _modifierDictionary[number];
         }
+
+        public char[] InputToChars(string number)
+        {
+            char[] numbersArray = number.ToCharArray();
+            return numbersArray;
+        }
+
+        //public
     }
 }
